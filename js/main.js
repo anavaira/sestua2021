@@ -66,10 +66,25 @@ function toggleMenu(){
     menu.classList.toggle('hidden');
 };
 
-console.log(hide);
-console.log(menu);
 hide.addEventListener("click", toggleMenu, false);
 
-// $(".hide").on('click', function(){
-//     $("nav ul").toggle('slow');
-// });
+async function sendEmail() {
+    let name = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    let telephone = document.getElementById('telephone').value;
+    let message = document.getElementById('message').value;
+    const emailResult = await Email.send({
+        Host : "mail.valeriasestua.com.ar",
+        Username : "info@valeriasestua.com.ar",
+        Password : "12AsbGywm^Z,",
+        To : 'marilinavaira@gmail.com',
+        From : "info@valeriasestua.com.ar",
+        Subject : "Mensaje del formulario de contacto",
+        Body : `Nombre: ${name}
+        E-mail: ${email}
+        Teléfono: ${telephone}
+        Mensaje: ${message}`,
+    });
+    console.log(1000, emailResult);
+    swal("Tu mensaje ha sido enviado", "Gracias por contactarme", "success");
+}

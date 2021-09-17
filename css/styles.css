@@ -154,6 +154,7 @@ input, textarea {
 .send-btn {
     font-size: 1em;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
@@ -226,6 +227,10 @@ input, textarea {
 
     #controls{
         display: none;
+    }
+
+    .field {
+        width: 300px;
     }
     
 }

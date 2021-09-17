@@ -37,13 +37,22 @@
                 </ul>
             </nav>
         </div>
-        <div id="main-content">
-            <div id="contact-form">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfYgqf2VHDHZTNOmrXOK1CfhzsKyz3R1VOpJgXY2AFzq4oKfw/viewform?embedded=true" width="640" height="880" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
-            </div>
+        <div id="contact-form">
+            <form method="post">
+                <label for="name">nombre: </label><br>
+                <input type="text" name="name" class="field" id="name" required="required"><br>
+                <label for="email">email: </label><br>
+                <input type="email" name="email" class="field" id="email" required="required"></br>
+                <label for="telephone">tel: </label><br>
+                <input type="tel" name="telephone" class="field" id="telephone" required="required"></br>
+                <label for="message">mensaje: </label><br>
+                <textarea name="message" class="field" id="message" required="required"></textarea></br>
+                <input class="send-btn" type="button" onclick="sendEmail()" value="enviar">
+            </form>
         </div>
-    </div>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    </div>    
     <script src="js/main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>
