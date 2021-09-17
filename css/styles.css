@@ -203,13 +203,19 @@ input, textarea {
         overflow: visible;
         padding: 30px 25px;
         width: 100%;
+        margin-top: 150px;
         margin-left: 0px;
+        right: 0px !important;
         display: flex;
         flex-direction: column;
         z-index: 0;
         transition: none;
         justify-content: center;
         align-content: center;
+    }
+
+    .responsive-main-content {
+        justify-content: center;
     }
     
     .main-img {
