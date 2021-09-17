@@ -7,7 +7,7 @@ function domReady(){
         imagenTotal = 17;
         imagenPrefijo = 'la-franca/la-franca';
     }else if(href.indexOf('piedra') > -1){
-        imagenTotal = 29;
+        imagenTotal = 25;
         imagenPrefijo = 'bajo-la-piedra/bajo-la-piedra';
     }else if(href.indexOf('colonia') > -1){
         imagenTotal = 25;
