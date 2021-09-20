@@ -177,6 +177,10 @@ input, textarea {
         cursor: pointer;
     }
 
+    .hide-mutante {
+        color: #F4F4F4 !important;
+    }
+
     .wrapper .sidebar h1 {
         padding: 0px 5px;
     }
@@ -184,6 +188,10 @@ input, textarea {
     .wrapper .sidebar ul {
         background-color: #F4F4F4;
         padding: 0px;
+    }
+
+    .wrapper .sidebar-mutante ul {
+        background-color: #222222;
     }
 
     .wrapper .sidebar ul li {
