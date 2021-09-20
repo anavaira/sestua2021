@@ -37,22 +37,29 @@
                 </ul>
             </nav>
         </div>
-        <div id="contact-form">
-            <form method="post">
-                <label for="name">nombre: </label><br>
-                <input type="text" name="name" class="field" id="name" required="required"><br>
-                <label for="email">email: </label><br>
-                <input type="email" name="email" class="field" id="email" required="required"></br>
-                <label for="telephone">tel: </label><br>
-                <input type="tel" name="telephone" class="field" id="telephone" required="required"></br>
-                <label for="message">mensaje: </label><br>
-                <textarea name="message" class="field" id="message" required="required"></textarea></br>
-                <input class="send-btn" type="button" onclick="sendEmail()" value="enviar">
-            </form>
+        <div id="cf-content">
+            <div class="cf-text">
+                <p>¡Escribime!</p>
+                <p>Y me pongo en contacto con vos a la brevedad.</p>     
+                <p>También podés mandarme un mail a: <a href="mailto:valenoduerme@gmail.com">valenoduerme@gmail.com</a> o un mensaje directo a mi ig: <a href="https://www.instagram.com/valeriasestua/">@valeriasestua</a></p>
+            </div>
+            <div id="contact-form">
+                <form method="post">
+                    <label for="name">nombre: </label><br>
+                    <input type="text" name="name" class="field" id="name" required="required"><br>
+                    <label for="email">email: </label><br>
+                    <input type="email" name="email" class="field" id="email" required="required"></br>
+                    <label for="telephone">tel: </label><br>
+                    <input type="tel" name="telephone" class="field" id="telephone" required="required"></br>
+                    <label for="message">mensaje: </label><br>
+                    <textarea name="message" class="field" id="message" required="required"></textarea></br>
+                    <input class="send-btn" type="button" onclick="sendEmail()" value="enviar">
+                </form>
+            </div>
         </div>
     </div> 
     <footer>
-        <Desarrollado>&#174; Todo los derechos reservados | &#169; Copyright 2021 | Desarrollado por <a href="https://www.linkedin.com/in/anavaira/">AV</a></p>
+        <p>&#174; Todo los derechos reservados | &#169; Copyright 2021 | Desarrollado por <a href="https://www.linkedin.com/in/anavaira/">AV</a></p>
     </footer>   
     <script src="js/main.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
