@@ -161,12 +161,9 @@ footer p a {
 }
 
 #cf-content {
-    position: relative;
-    overflow: visible;
     width: 100%;
     margin-left: 250px;
     display: block;
-    z-index: -20;
 }
 
 .cf-text {
@@ -177,7 +174,7 @@ footer p a {
 
 .cf-text p a {
     color: #222222;
-    cursor: pointer;
+    cursor: pointer !important;
 }
 
 #contact-form {
