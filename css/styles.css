@@ -128,10 +128,11 @@ body {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     z-index: 30;
     padding: 10px 25px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
