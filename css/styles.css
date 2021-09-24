@@ -271,7 +271,7 @@ input, textarea {
     
     .main-img {
         padding: 5px 0px;
-        width: 100%;
+        width: auto;
         height: 100%;
     }
 
